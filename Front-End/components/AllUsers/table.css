@@ -1,0 +1,154 @@
+.users-wrapper {
+    padding: 2.5rem 1.5rem;
+    background: #ffffff;
+    min-height: 330px;
+    border: 0;
+    margin: 0 40px;
+    border-radius: 4px;
+}
+.table-wrapper {
+    padding: 1rem 1.25rem;
+    position: relative;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+}
+.table-button {
+    height: 40px;
+    padding: 6px;
+    margin: 12px;
+    width: 80px;
+    font-size: 17px;
+}
+.edti-button:hover {
+    transition: all 0.2s ease-in-out;
+
+    background: #bb1f59;
+}
+.delete-button:hover {
+    transition: all 0.2s ease-in-out;
+
+    background-color: red;
+}
+.save-button:hover {
+    transition: all 0.2s ease-in-out;
+
+    background-color: #048a81;
+}
+.table-button svg {
+    color: rgb(118, 202, 202);
+}
+.table-button svg:hover {
+    transition: all 0.2s ease-in-out;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+}
+table thead {
+    background: #0d3286;
+    border-color: #0d3286;
+    color: white;
+}
+table tr {
+    border: 1px solid #ddd;
+    padding: 5.6px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table td:hover {
+    transition: all 0.2s ease-in-out;
+    color: #5e0d5096;
+    padding: 10px;
+}
+
+table th {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #e9eff5;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    .header-title a {
+        padding-right: 0;
+        padding-left: 280px;
+    }
+
+    .insertForm {
+        width: 350px;
+        height: 570px;
+    }
+    .createProductForm {
+        min-width: 356px;
+        height: 686px;
+    }
+
+    .users-wrapper {
+        padding: 0;
+        margin: 0 10px;
+    }
+    .label-row {
+        position: relative;
+        display: block;
+        padding: 2px;
+
+    }
+    .newProduct--button {
+        margin: 20px 51px;
+    }
+
+    .sign-up--button{
+        width: 55%;
+    }
+}
